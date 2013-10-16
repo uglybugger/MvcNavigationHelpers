@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcNavigationHelpers", "MvcNavigationHelpers\MvcNavigationHelpers.csproj", "{561B5BE4-7F0B-46F0-AC56-288DF5E423E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleMvcApp", "SampleMvcApp\SampleMvcApp.csproj", "{A782FC1B-3254-4D75-A888-2A0B1C62511A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{58138146-26CD-4530-A43D-40D0C7766A30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{561B5BE4-7F0B-46F0-AC56-288DF5E423E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{561B5BE4-7F0B-46F0-AC56-288DF5E423E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{561B5BE4-7F0B-46F0-AC56-288DF5E423E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{561B5BE4-7F0B-46F0-AC56-288DF5E423E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A782FC1B-3254-4D75-A888-2A0B1C62511A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A782FC1B-3254-4D75-A888-2A0B1C62511A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A782FC1B-3254-4D75-A888-2A0B1C62511A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A782FC1B-3254-4D75-A888-2A0B1C62511A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A782FC1B-3254-4D75-A888-2A0B1C62511A} = {58138146-26CD-4530-A43D-40D0C7766A30}
+	EndGlobalSection
+EndGlobal

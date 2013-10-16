@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{5813
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcNavigationHelpers.UnitTests", "MvcNavigationHelpers.UnitTests\MvcNavigationHelpers.UnitTests.csproj", "{F0D2C12E-03EB-4357-BD3F-1049CDA448F5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8A0E984C-19BF-4529-91B3-FCF0247525BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,5 +35,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A782FC1B-3254-4D75-A888-2A0B1C62511A} = {58138146-26CD-4530-A43D-40D0C7766A30}
+		{F0D2C12E-03EB-4357-BD3F-1049CDA448F5} = {8A0E984C-19BF-4529-91B3-FCF0247525BC}
 	EndGlobalSection
 EndGlobal

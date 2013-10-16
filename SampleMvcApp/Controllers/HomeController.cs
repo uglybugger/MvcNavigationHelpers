@@ -7,6 +7,19 @@ namespace SampleMvcApp.Controllers
 {
     public class HomeController : Controller
     {
+
+        public ActionResult AwfulIndex()
+        {
+            // NOTE: If you do this in production code, you are a Bad Person. You should take a dependency on
+            // an IClock instead. And if you use DateTime rather than DateTimeOffset, you deserve everything bad
+            // that happens to you :)
+            var todayIsThursday = DateTimeOffset.Now.DayOfWeek == DayOfWeek.Thursday;
+
+            return todayIsThursday
+                       ? RedirectToAction("ThursdayLandingPage", new { someAnswer = 42})
+                       : RedirectToAction("ThursdayLandingPage", new { someQuestion = "What is the answer to life, the universe and everything?"});
+        }
+
         public ActionResult Index()
         {
             // NOTE: If you do this in production code, you are a Bad Person. You should take a dependency on

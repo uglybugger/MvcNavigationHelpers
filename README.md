@@ -47,7 +47,16 @@ The nice one:
 * pulls route values directly out of your expression;
 * is friendly to even the most primitive refactoring tools (Here's lookin' at you, Visual Studio...)
 
+# How do I get it?
+
+    Install-Package MvcNavigationHelpers
+
+Job done.
+
+I'd probably add a convention test or two to make sure that nobody's calling any of the silly magic-string overloads any more, especially if you have new people playing in your sandpit on occasion - they'll probably think they're doing a good thing by using explicit string for controller and action names. **You can automate this. It has value and it's cheap to do, so you *should* automate this.**
+
 # FAQ
+
 ## Haven't you heard of MvcContrib?
 Nope. Never heard of it. I came down in the last shower, me.
 

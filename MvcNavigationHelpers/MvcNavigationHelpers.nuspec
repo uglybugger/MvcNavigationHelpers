@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Andrew Harcourt</authors>
+    <owners>Andrew Harcourt</owners>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/uglybugger/MvcNavigationHelpers</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Strongly-typed, refactoring-friendly navigation extension methods for ASP.NET MVC.</description>
+    <releaseNotes>.</releaseNotes>
+    <copyright>Copyright 2013 Andrew Harcourt</copyright>
+    <tags>MVC MVC4 navigation helper lambda expression url</tags>
+  </metadata>
+</package>

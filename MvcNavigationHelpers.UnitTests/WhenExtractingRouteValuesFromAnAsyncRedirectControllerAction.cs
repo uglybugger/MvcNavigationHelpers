@@ -5,27 +5,26 @@ using Shouldly;
 
 namespace MvcNavigationHelpers.UnitTests
 {
-    [TestFixture]
-    public class WhenExtractingRouteValuesFromASimpleControllerAction
+    public class WhenExtractingRouteValuesFromAnAsyncRedirectControllerAction
     {
         private RouteValueDictionary _routeValues;
 
         [SetUp]
         public void SetUp()
         {
-            _routeValues = RouteValueDictionaryBuilder.ExtractRouteValues<TestController, ActionResult>(c => c.SimpleMethodWithNoParameters());
+            _routeValues = RouteValueDictionaryBuilder.ExtractRouteValues<TestAsyncController, RedirectResult>(c => c.MethodWithRedirectResult());
         }
 
         [Test]
         public void TheControllerShouldBeCorrect()
         {
-            _routeValues["controller"].ShouldBe("Test");
+            _routeValues["controller"].ShouldBe("TestAsync");
         }
 
         [Test]
         public void TheActionMethodShouldBeCorrect()
         {
-            _routeValues["action"].ShouldBe("SimpleMethodWithNoParameters");
+            _routeValues["action"].ShouldBe("MethodWithRedirectResult");
         }
     }
 }

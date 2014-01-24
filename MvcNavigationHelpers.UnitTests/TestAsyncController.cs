@@ -1,26 +1,27 @@
 ﻿using System;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 
 namespace MvcNavigationHelpers.UnitTests
 {
-    public class TestController : Controller
+    public class TestAsyncController : AsyncController
     {
-        public ActionResult SimpleMethodWithNoParameters()
+        public async Task<ActionResult> SimpleMethodWithNoParameters()
         {
             throw new NotSupportedException("I exist only so that you can find this method. I'm not for calling!");
         }
 
-        public ActionResult MethodWithOneParameter(int foo)
+        public async Task<ActionResult> MethodWithOneParameter(int foo)
         {
             throw new NotSupportedException("I exist only so that you can find this method. I'm not for calling!");
         }
 
-        public ActionResult MethodWithSeveralParameters(int foo, bool bar, string baz)
+        public async Task<ActionResult> MethodWithSeveralParameters(int foo, bool bar, string baz)
         {
             throw new NotSupportedException("I exist only so that you can find this method. I'm not for calling!");
         }
 
-        public RedirectResult MethodWithRedirectResult()
+        public async Task<RedirectResult> MethodWithRedirectResult()
         {
             throw new NotSupportedException("I exist only so that you can find this method. I'm not for calling!");
         }

@@ -6,20 +6,20 @@ using Shouldly;
 namespace MvcNavigationHelpers.UnitTests
 {
     [TestFixture]
-    public class WhenExtractingRouteValuesFromAControllerActionWithSeveralParameters
+    public class WhenExtractingRouteValuesFromAnAsyncControllerActionWithSeveralParameters
     {
         private RouteValueDictionary _routeValues;
 
         [SetUp]
         public void SetUp()
         {
-            _routeValues = RouteValueDictionaryBuilder.ExtractRouteValues<TestController, ActionResult>(c => c.MethodWithSeveralParameters(42, true, "bork bork bork"));
+            _routeValues = RouteValueDictionaryBuilder.ExtractRouteValues<TestAsyncController, ActionResult>(c => c.MethodWithSeveralParameters(42, true, "bork bork bork"));
         }
 
         [Test]
         public void TheControllerShouldBeCorrect()
         {
-            _routeValues["controller"].ShouldBe("Test");
+            _routeValues["controller"].ShouldBe("TestAsync");
         }
 
         [Test]

@@ -1,4 +1,5 @@
-﻿using System.Web.Routing;
+﻿using System.Web.Mvc;
+using System.Web.Routing;
 using NUnit.Framework;
 using Shouldly;
 
@@ -12,7 +13,7 @@ namespace MvcNavigationHelpers.UnitTests
         [SetUp]
         public void SetUp()
         {
-            _routeValues = RouteValueDictionaryBuilder.ExtractRouteValues<TestController>(c => c.MethodWithOneParameter(42));
+            _routeValues = RouteValueDictionaryBuilder.ExtractRouteValues<TestController, ActionResult>(c => c.MethodWithOneParameter(42));
         }
 
         [Test]

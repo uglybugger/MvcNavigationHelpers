@@ -47,10 +47,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TestAsyncController.cs" />
     <Compile Include="TestController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WhenExtractingRouteValuesFromAControllerActionWithOneParameter.cs" />
     <Compile Include="WhenExtractingRouteValuesFromAControllerActionWithSeveralParameters.cs" />
+    <Compile Include="WhenExtractingRouteValuesFromAnAsyncControllerAction.cs" />
+    <Compile Include="WhenExtractingRouteValuesFromAnAsyncControllerActionWithSeveralParameters.cs" />
+    <Compile Include="WhenExtractingRouteValuesFromAnAsyncRedirectControllerAction.cs" />
+    <Compile Include="WhenExtractingRouteValuesFromARedirectControllerAction.cs" />
     <Compile Include="WhenExtractingRouteValuesFromASimpleControllerAction.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -5,15 +5,14 @@ using Shouldly;
 
 namespace MvcNavigationHelpers.UnitTests
 {
-    [TestFixture]
-    public class WhenExtractingRouteValuesFromASimpleControllerAction
+    public class WhenExtractingRouteValuesFromARedirectControllerAction
     {
         private RouteValueDictionary _routeValues;
 
         [SetUp]
         public void SetUp()
         {
-            _routeValues = RouteValueDictionaryBuilder.ExtractRouteValues<TestController, ActionResult>(c => c.SimpleMethodWithNoParameters());
+            _routeValues = RouteValueDictionaryBuilder.ExtractRouteValues<TestController, RedirectResult>(c => c.MethodWithRedirectResult());
         }
 
         [Test]
@@ -25,7 +24,7 @@ namespace MvcNavigationHelpers.UnitTests
         [Test]
         public void TheActionMethodShouldBeCorrect()
         {
-            _routeValues["action"].ShouldBe("SimpleMethodWithNoParameters");
+            _routeValues["action"].ShouldBe("MethodWithRedirectResult");
         }
     }
 }

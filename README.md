@@ -11,7 +11,7 @@ This is the way navigation is done in ASP.NET MVC applications:
 
         return todayIsThursday
                    ? RedirectToAction("ThursdayLandingPage", new { someAnswer = 42})
-                   : RedirectToAction("ThursdayLandingPage", new { someQuestion = "What is the answer to life, the universe and everything?"});
+                   : RedirectToAction("DefaultLandingPage", new { someQuestion = "What is the answer to life, the universe and everything?"});
     }
 
 This way is yucky. Magic strings are great, and all, but I like my code to keep working after I've shipped it and want to rename something.
